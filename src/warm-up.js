@@ -44,13 +44,19 @@ var isFavorite = false;
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
+var isShortStory;
+
 if (pages < 25) {
-    var isShortStory = true;
+    isShortStory = true;
 } else {
     isShortStory = false;
 };
 
 console.log(isShortStory);
+
+// can be refactored to: 
+
+var isShortStory = pages < 25;
 
 //------------------------- Conditionals -------------------------//
 
