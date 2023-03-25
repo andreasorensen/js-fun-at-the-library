@@ -4,8 +4,6 @@ function createTitle(title) {
 
 createTitle();
 
-
-
 function buildMainCharacter(name, age, pronouns) {
   return {
     name: name, 
