@@ -3,7 +3,7 @@ module.exports = {
   shelfBook,
   unshelfBook,
   listTitles,
-  // searchShelf
+  searchShelf
 };
 
 function shelfBook(bookTitle, sciFiShelf) {
@@ -28,3 +28,12 @@ function listTitles(shelf) {
   return `${shelfList[0]}, ${shelfList[1]}, ${shelfList[2]}`;
 }
   
+function searchShelf(shelf, bookTitle) {
+  for (var i=0; i < shelf.length; i++){
+    if ((shelf[i].title) === bookTitle) {
+      return true 
+    }
+  }
+  return false;
+}
+ // .includes() should be used when refactoring so that a boolean value is returned
