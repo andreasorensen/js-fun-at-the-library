@@ -2,18 +2,13 @@ function createTitle(title) {
   return `The ${title}`; 
 };
 
-createTitle();
-
 function buildMainCharacter(name, age, pronouns) {
   return {
-    name: name, 
-    age: age, 
-    pronouns: pronouns
+    name,
+    age,
+    pronouns,
   }
 };
-
-buildMainCharacter();
-
 
 function saveReview(newReview, array) {
   if (!array.includes(newReview)) {
